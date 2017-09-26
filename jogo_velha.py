@@ -1,4 +1,4 @@
-from __future__ import print_function
+#from __future__ import print_function
 
 def print_board (board):
     print('O quadro atual: \n ')
@@ -9,7 +9,7 @@ def modelo_board ():
 
     
 def escolha_sinal():
-    jogador1 = raw_input('Escolha se voce quer usar X ou O: ')
+    jogador1 = input('Escolha se voce quer usar X ou O: ')
     jogador1 = jogador1.upper()
     if jogador1 == 'X':
         jogador2 = 'O'
@@ -21,7 +21,7 @@ def input_user (board, jogador):
     modelo_board()
     x = True
     while(x == True):
-        temp = int(raw_input('Escolha uma posicao: '))
+        temp = int(input('Escolha uma posicao: '))
         if temp>9 or temp<1 or board[temp] != ' ':
             x = True
             print('Digite  uma posicao valida ')
@@ -97,7 +97,7 @@ while not (fim):
             elif(play):
                 play = rodada (board,jogador2)
 
-        continuar = raw_input('deseja continuar? S ou N ')
+        continuar = input('deseja continuar? S ou N ')
         continuar = continuar.upper()
         if continuar == 'N':
             jogando = False
