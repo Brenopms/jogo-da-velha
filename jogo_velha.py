@@ -64,8 +64,6 @@ def check_tie(board):
     else:
         return True
     
-       
-
 def rodada(board, player):
     input_user(board,player)
     if (check_win(board)== True):
@@ -77,9 +75,8 @@ def rodada(board, player):
         return False
     else:
         return True
-
-
-                        
+    
+# --------- Main Program Start ---------                       
 fim = False
 while not (fim):    
     board = init_board()
